@@ -19,7 +19,7 @@ def TambahBuku():
 
 
 def LihatBuku():
-    conn = Database.Connect()
+    conn = Database.connect()
     cursor = conn.cursor()
 
     cursor.execute("SELECT * FROM Buku")
@@ -39,7 +39,7 @@ def HapusBuku():
     LihatBuku()
     id_buku = input("Masukkan ID buku yang ingin dihapus: ")
 
-    conn = Database.Connect()
+    conn = Database.connect()
     cursor = conn.cursor()
 
     cursor.execute("DELETE FROM Buku WHERE id = ?", (id_buku,))
