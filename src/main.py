@@ -1,5 +1,5 @@
 import Database
-import Data-Buku
+import Data
 import Peminjaman
 
 def menu_utama():
