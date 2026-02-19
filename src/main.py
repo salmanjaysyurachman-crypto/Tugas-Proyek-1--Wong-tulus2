@@ -1,5 +1,5 @@
 import Database
-import Data-Buku
+import Data
 import Peminjaman
 
 def menu_utama():
@@ -38,13 +38,13 @@ def main():
                 sub = input("Pilih menu data: ")
 
                 if sub == "1":
-                    Data-Buku.tambah_buku()
+                    Data.tambah_buku()
 
                 elif sub == "2":
-                    Data-Buku.lihat_buku()
+                    Data.lihat_buku()
 
                 elif sub == "3":
-                    Data-Buku.hapus_buku()
+                    Data.hapus_buku()
 
                 elif sub == "4":
                     break
