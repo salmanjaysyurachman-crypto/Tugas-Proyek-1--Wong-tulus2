@@ -38,13 +38,13 @@ def main():
                 sub = input("Pilih menu data: ")
 
                 if sub == "1":
-                    Data.tambah_buku()
+                    Data.TambahBuku()
 
                 elif sub == "2":
-                    Data.lihat_buku()
+                    Data.LihatBuku()
 
                 elif sub == "3":
-                    Data.hapus_buku()
+                    Data.HapusBuku()
 
                 elif sub == "4":
                     break
