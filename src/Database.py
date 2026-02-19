@@ -6,6 +6,7 @@ DB_NAME = "perpustakaan.db"
 def connect():
     return sqlite3.connect(DB_NAME)
 
+
 def setup_database():
     conn = connect()
     cursor = conn.cursor()

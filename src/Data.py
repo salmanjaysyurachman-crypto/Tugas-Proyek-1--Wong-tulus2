@@ -4,7 +4,7 @@ def TambahBuku():
     judul = input("Judul buku: ")
     stok = int(input("Stok: "))
 
-    conn = Database.Connect()
+    conn = Database.connect()
     cursor = conn.cursor()
 
     cursor.execute(
