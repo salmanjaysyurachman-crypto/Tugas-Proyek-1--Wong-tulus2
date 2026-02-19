@@ -1,8 +1,8 @@
-import database as db
-import data
+import Database as db
+import Data
 
 def pinjam_buku():
-    data.lihat_buku()
+    Data.lihat_buku()
 
     i = int(input("Pilih buku: ")) - 1
 
