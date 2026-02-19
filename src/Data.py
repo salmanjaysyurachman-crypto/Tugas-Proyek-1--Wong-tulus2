@@ -5,7 +5,7 @@ def tambah_buku():
     stok = int(input("Stok: "))
 
 buku = {
-        "judul": judul,
+        "judul": judul buku,
         "stok": stok
     }
 

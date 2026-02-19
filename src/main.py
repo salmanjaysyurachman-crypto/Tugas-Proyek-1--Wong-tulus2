@@ -9,7 +9,7 @@ def menu_utama():
     print("3. Keluar")
 
 
-def menu_data():
+def menu_Data():
     print("\n------ MENU DATA BUKU ------")
     print("1. Tambah Buku")
     print("2. Lihat Buku")
@@ -17,7 +17,7 @@ def menu_data():
     print("4. Kembali")
 
 
-def menu_peminjaman():
+def menu_Peminjaman():
     print("\n------ MENU PEMINJAMAN ------")
     print("1. Pinjam Buku")
     print("2. Kembalikan Buku")
@@ -34,7 +34,7 @@ def main():
         # ===== MENU DATA BUKU =====
         if pilih == "1":
             while True:
-                menu_data()
+                menu_Data()
                 sub = input("Pilih menu data: ")
 
                 if sub == "1":
@@ -55,7 +55,7 @@ def main():
         # ===== MENU PEMINJAMAN =====
         elif pilih == "2":
             while True:
-                menu_peminjaman()
+                menu_Peminjaman()
                 sub = input("Pilih menu peminjaman: ")
 
                 if sub == "1":
