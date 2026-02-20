@@ -1,40 +1,66 @@
-import Database as db
+# Peminjaman.py
+import Database
 import Data
 
 def pinjam_buku():
     Data.LihatBuku()
 
-    i = int(input("Pilih buku: ")) - 1
+    try:
+        id_buku = int(input("Pilih ID buku: "))
+    except:
+        print("Masukkan angka!")
+        return
 
-    if 0 <= i < len(db.buku_db):
-        buku = db.buku_db[i]
+    conn = Database.connect()
+    cursor = conn.cursor()
 
-        if buku["stok"] > 0:
-            nama = input("Nama peminjam: ")
+    # ambil buku
+    cursor.execute("SELECT * FROM buku WHERE id = ?", (id_buku,))
+    buku = cursor.fetchone()
 
-            buku["stok"] -= 1
+    if buku is None:
+        print("Buku tidak ditemukan")
+        conn.close()
+        return
 
-            db.peminjaman_db.append({
-                "nama": nama,
-                "judul": buku["judul"]
-            })
+    if buku[2] <= 0:
+        print("Stok habis")
+        conn.close()
+        return
 
-            print("✅ Buku dipinjam")
-        else:
-            print("❌ Stok habis")
+    nama = input("Nama peminjam: ")
+
+    # simpan peminjaman
+    cursor.execute("INSERT INTO peminjaman (nama, judul) VALUES (?, ?)", (nama, buku[1]))
+
+    # kurangi stok
+    cursor.execute("UPDATE buku SET stok = stok - 1 WHERE id = ?", (id_buku,))
+
+    conn.commit()
+    conn.close()
+    print("✅ Buku berhasil dipinjam")
+
 
 def kembalikan_buku():
     nama = input("Nama peminjam: ")
 
-    for pinjam in db.peminjaman_db:
-        if pinjam["nama"] == nama:
+    conn = Database.connect()
+    cursor = conn.cursor()
 
-            for buku in db.buku_db:
-                if buku["judul"] == pinjam["judul"]:
-                    buku["stok"] += 1
+    cursor.execute("SELECT * FROM peminjaman WHERE nama = ?", (nama,))
+    data = cursor.fetchone()
 
-            db.peminjaman_db.remove(pinjam)
-            print("✅ Buku dikembalikan")
-            return
+    if data is None:
+        print("Data tidak ditemukan")
+        conn.close()
+        return
 
-    print("❌ Data tidak ditemukan")
+    judul = data[2]
+
+    # tambah stok
+    cursor.execute("UPDATE buku SET stok = stok + 1 WHERE judul = ?", (judul,))
+    cursor.execute("DELETE FROM peminjaman WHERE id = ?", (data[0],))
+
+    conn.commit()
+    conn.close()
+    print("✅ Buku dikembalikan")
