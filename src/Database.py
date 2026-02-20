@@ -9,8 +9,6 @@ def create_table():
     conn = connect_db()
     cur = conn.cursor()
 
-    # Tabel buku
-    cur.execute("""
     CREATE TABLE IF NOT EXISTS buku (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         judul TEXT,
