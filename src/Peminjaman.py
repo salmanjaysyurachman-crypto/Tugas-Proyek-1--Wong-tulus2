@@ -2,7 +2,7 @@ import Database as db
 import Data
 
 def pinjam_buku():
-    Data.lihat_buku()
+    Data.LihatBuku()
 
     i = int(input("Pilih buku: ")) - 1
 
