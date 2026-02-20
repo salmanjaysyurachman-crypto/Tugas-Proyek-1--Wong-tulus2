@@ -1,30 +1,32 @@
+# database.py
 import sqlite3
 
-DB_NAME = "perpustakaan.db"
+def connect_db():
+    conn = sqlite3.connect("perpustakaan.db")
+    return conn
 
+def create_table():
+    conn = connect_db()
+    cur = conn.cursor()
 
-def connect():
-    return sqlite3.connect(DB_NAME)
-
-def setup_database():
-    conn = connect()
-    cursor = conn.cursor()
-
-    # tabel buku
-    cursor.execute("""
+    # Tabel buku
+    cur.execute("""
     CREATE TABLE IF NOT EXISTS buku (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         judul TEXT,
-        stok INTEGER
+        pengarang TEXT,
+        isbn TEXT,
+        status TEXT
     )
     """)
 
-    # tabel peminjaman
-    cursor.execute("""
+    # Tabel peminjaman
+    cur.execute("""
     CREATE TABLE IF NOT EXISTS peminjaman (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         nama TEXT,
-        judul TEXT
+        judul_buku TEXT,
+        tanggal TEXT
     )
     """)
 
