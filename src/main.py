@@ -1,6 +1,6 @@
 from database import create_table
 from data import tambah_buku, hapus_buku
-from peminjaman import pinjam_buku
+from Peminjaman import pinjam_buku
 
 def menu():
     while True:
