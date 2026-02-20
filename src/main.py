@@ -9,7 +9,7 @@ def menu():
         print("2. Peminjaman Buku")
         print("3. Keluar")
 
-         pilih = input("Pilih menu: ")
+        pilih = input("Pilih menu: ")
 
         if pilih == "1":
             print("\n1. Tambah data buku")
