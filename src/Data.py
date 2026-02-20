@@ -1,49 +1,40 @@
-import Database
+from database import connect_db
 
-def TambahBuku():
-    judul = input("Judul buku: ")
-    stok = int(input("Stok: "))
+def tambah_buku():
+    conn = connect_db()
+    cur = conn.cursor()
 
-    conn = Database.Connect()
-    cursor = conn.cursor()
+    print("\n=== Tambah Data Buku ===")
+    judul = input("Judul buku : ")
+    pengarang = input("Pengarang : ")
+    isbn = input("ISBN : ")
 
-    cursor.execute(
-        "INSERT INTO Buku (judul, stok) VALUES (?, ?)",
-        (judul, stok)
-    )
+    cur.execute("INSERT INTO buku (judul, pengarang, isbn, status) VALUES (?, ?, ?, ?)",
+                (judul, pengarang, isbn, "tersedia"))
 
     conn.commit()
     conn.close()
+    print("✅ Data buku berhasil dimasukkan\n")
 
-    print("✅ Buku berhasil ditambahkan")
 
+def hapus_buku():
+    conn = connect_db()
+    cur = conn.cursor()
 
-def LihatBuku():
-    conn = Database.Connect()
-    cursor = conn.cursor()
-
-    cursor.execute("SELECT * FROM Buku")
-    data = cursor.fetchall()
+    print("\n=== Hapus Data Buku ===")
+    cur.execute("SELECT id, judul FROM buku")
+    data = cur.fetchall()
 
     if not data:
-        print("Belum ada buku.")
-    else:
-        print("\nDaftar Buku:")
-        for buku in data:
-            print(f"{buku[0]}. {buku[1]} | Stok: {buku[2]}")
+        print("❌ Tidak ada data buku")
+        return
 
-    conn.close()
+    for d in data:
+        print(f"{d[0]}. {d[1]}")
 
+    pilih = int(input("Pilih ID buku yang ingin dihapus: "))
+    cur.execute("DELETE FROM buku WHERE id = ?", (pilih,))
 
-def HapusBuku():
-    LihatBuku()
-    id_buku = input("Masukkan ID buku yang ingin dihapus: ")
-
-    conn = Database.Connect()
-    cursor = conn.cursor()
-
-    cursor.execute("DELETE FROM Buku WHERE id = ?", (id_buku,))
     conn.commit()
     conn.close()
-
-    print("✅ Buku berhasil dihapus")
+    print("🗑️ Data berhasil dihapus\n")
