@@ -1,40 +1,47 @@
-import database as db
-import data
+from database import connect_db
 
 def pinjam_buku():
-    data.lihat_buku()
+    conn = connect_db()
+    cur = conn.cursor()
 
-    i = int(input("Pilih buku: ")) - 1
+    print("\n=== Peminjaman Buku ===")
 
-    if 0 <= i < len(db.buku_db):
-        buku = db.buku_db[i]
+    cur.execute("SELECT id, judul, status FROM buku")
+    buku = cur.fetchall()
 
-        if buku["stok"] > 0:
-            nama = input("Nama peminjam: ")
+    if not buku:
+        print("❌ Tidak ada buku")
+        return
 
-            buku["stok"] -= 1
+    for b in buku:
+        print(f"{b[0]}. {b[1]} - {b[2]}")
 
-            db.peminjaman_db.append({
-                "nama": nama,
-                "judul": buku["judul"]
-            })
+    pilih = int(input("Pilih ID buku: "))
 
-            print("✅ Buku dipinjam")
-        else:
-            print("❌ Stok habis")
+    # cek status buku
+    cur.execute("SELECT judul, status FROM buku WHERE id = ?", (pilih,))
+    data = cur.fetchone()
 
-def kembalikan_buku():
+    if data is None:
+        print("❌ Buku tidak ditemukan")
+        return
+
+    judul, status = data
+
+    if status == "dipinjam":
+        print("❌ Buku sudah dipinjam")
+        return
+
     nama = input("Nama peminjam: ")
+    tanggal = input("Tanggal pinjam: ")
 
-    for pinjam in db.peminjaman_db:
-        if pinjam["nama"] == nama:
+    # simpan peminjaman
+    cur.execute("INSERT INTO peminjaman (nama, judul_buku, tanggal) VALUES (?, ?, ?)",
+                (nama, judul, tanggal))
 
-            for buku in db.buku_db:
-                if buku["judul"] == pinjam["judul"]:
-                    buku["stok"] += 1
+    # update status buku
+    cur.execute("UPDATE buku SET status = 'dipinjam' WHERE id = ?", (pilih,))
 
-            db.peminjaman_db.remove(pinjam)
-            print("✅ Buku dikembalikan")
-            return
-
-    print("❌ Data tidak ditemukan")
+    conn.commit()
+    conn.close()
+    print("✅ Buku berhasil dipinjam\n")
