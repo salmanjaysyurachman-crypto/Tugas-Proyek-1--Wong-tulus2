@@ -2,6 +2,7 @@ from database import create_table
 from data import tambah_buku, hapus_buku
 from Peminjaman import pinjam_buku
 
+
 def menu():
     while True:
         print("\n=== SISTEM PERPUSTAKAAN ===")
@@ -11,27 +12,40 @@ def menu():
 
         pilih = input("Pilih menu: ")
 
+        # ================= MENU PENDATAAN =================
         if pilih == "1":
-            print("\n1. Tambah data buku")
-            print("2. Hapus data buku")
-            sub = input("Pilih: ")
+            while True:
+                print("\n=== MENU PENDATAAN BUKU ===")
+                print("1. Tambah data buku")
+                print("2. Hapus data buku")
+                print("3. Kembali ke menu utama")
 
-            if sub == "1":
-                tambah_buku()
-            elif sub == "2":
-                hapus_buku()
+                sub = input("Pilih menu pendataan: ")
 
+                if sub == "1":
+                    tambah_buku()
+                elif sub == "2":
+                    hapus_buku()
+                elif sub == "3":
+                    print("↩️ Kembali ke menu utama...")
+                    break   # keluar dari pendataan
+                else:
+                    print("❌ Pilihan tidak valid")
+
+        # ================= MENU PEMINJAMAN =================
         elif pilih == "2":
             pinjam_buku()
 
+        # ================= KELUAR PROGRAM =================
         elif pilih == "3":
-            print("Program selesai.")
+            print("👋 Program selesai.")
             break
 
         else:
             print("❌ Pilihan tidak valid")
 
 
+# PROGRAM UTAMA
 if __name__ == "__main__":
     create_table()
     menu()
