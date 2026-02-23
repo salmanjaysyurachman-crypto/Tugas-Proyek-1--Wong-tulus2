@@ -16,7 +16,11 @@ def pinjam_buku():
     for b in buku:
         print(f"{b[0]}. {b[1]} - {b[2]}")
 
-    pilih = int(input("Pilih ID buku: "))
+    try:
+    	pilih = int(input("Pilih ID buku: "))
+    except ValueError:
+    	print("❌ Masukkan angka yang valid!")
+    	return
 
     # cek status buku
     cur.execute("SELECT judul, status FROM buku WHERE id = ?", (pilih,))
