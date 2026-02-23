@@ -1,5 +1,5 @@
 from database import create_table
-from data import tambah_buku, hapus_buku
+from data import tambah_buku, hapus_buku, lihat_buku
 from Peminjaman import pinjam_buku
 
 
@@ -18,7 +18,8 @@ def menu():
                 print("\n=== MENU PENDATAAN BUKU ===")
                 print("1. Tambah data buku")
                 print("2. Hapus data buku")
-                print("3. Kembali ke menu utama")
+                print("3. Lihat daftar buku")
+                print("4. Kembali ke menu utama")
 
                 sub = input("Pilih menu pendataan: ")
 
@@ -27,8 +28,10 @@ def menu():
                 elif sub == "2":
                     hapus_buku()
                 elif sub == "3":
+                    lihat_buku()
+                elif sub == "4":
                     print("↩️ Kembali ke menu utama...")
-                    break   # keluar dari pendataan
+                    break
                 else:
                     print("❌ Pilihan tidak valid")
 
