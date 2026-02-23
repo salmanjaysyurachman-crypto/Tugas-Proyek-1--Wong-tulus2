@@ -1,6 +1,6 @@
 from database import create_table
 from data import tambah_buku, hapus_buku, lihat_buku
-from Peminjaman import pinjam_buku
+from Peminjaman import pinjam_buku, kembalikan_buku
 
 
 def menu():
@@ -37,20 +37,19 @@ def menu():
 
         # ================= MENU PEMINJAMAN =================
         elif pilih == "2":
-            elif pilih == "2":
-                print("\n=== Peminjaman Buku ===")
-                print("1. Peminjaman")
-                print("2. Pengembalian")
-                print("3. Kembali ke menu utama")
-                sub_pinjam = input("Pilih menu: ")
+            print("\n=== Peminjaman Buku ===")
+            print("1. Peminjaman")
+            print("2. Pengembalian")
+            print("3. Kembali ke menu utama")
+            sub_pinjam = input("Pilih menu: ")
 
-                if sub_pinjam == "1":
-                    pinjam_buku()
-                elif sub_pinjam == "2":
-                    kembalikan_buku() # Ini fungsi baru yang akan kita buat
-                else:
-                    print("↩️ Kembali ke menu utama...")
-                    break
+            if sub_pinjam == "1":
+                pinjam_buku()
+            elif sub_pinjam == "2":
+                kembalikan_buku() # Ini fungsi baru yang akan kita buat
+            else:
+                print("↩️ Kembali ke menu utama...")
+                break
 
         # ================= KELUAR PROGRAM =================
         elif pilih == "3":
