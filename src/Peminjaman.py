@@ -45,7 +45,7 @@ def pinjam_buku():
     tanggal = input("Tanggal pinjam: ")
 
     # simpan peminjaman
-    cur.execute("INSERT INTO peminjaman (nama, judul_buku, tanggal) VALUES (?, ?, ?)",
+    cur.execute("INSERT INTO peminjaman (nama, judul_buku, tanggal_pinjam) VALUES (?, ?, ?)",
                 (nama, judul, tanggal))
 
     # update status buku
