@@ -1,5 +1,7 @@
 from database import connect_db
 
+
+# ================= TAMBAH BUKU =================
 def tambah_buku():
     conn = connect_db()
     cur = conn.cursor()
@@ -9,14 +11,17 @@ def tambah_buku():
     pengarang = input("Pengarang : ")
     isbn = input("ISBN : ")
 
-    cur.execute("INSERT INTO buku (judul, pengarang, isbn, status) VALUES (?, ?, ?, ?)",
-                (judul, pengarang, isbn, "tersedia"))
+    cur.execute(
+        "INSERT INTO buku (judul, pengarang, isbn, status) VALUES (?, ?, ?, ?)",
+        (judul, pengarang, isbn, "tersedia")
+    )
 
     conn.commit()
     conn.close()
     print("✅ Data buku berhasil dimasukkan\n")
 
 
+# ================= HAPUS BUKU =================
 def hapus_buku():
     conn = connect_db()
     cur = conn.cursor()
@@ -35,7 +40,7 @@ def hapus_buku():
     try:
         pilih = int(input("Pilih ID buku yang ingin dihapus: "))
     except ValueError:
-        print("❌ Input salah! Harap masukkan angka ID saja.")
+        print("❌ Input harus angka!")
         conn.close()
         return
 
@@ -44,21 +49,22 @@ def hapus_buku():
     conn.close()
     print("🗑️ Data berhasil dihapus\n")
 
-def menu_pendataan():
-    while True:
-        print("\n=== MENU PENDATAAN BUKU ===")
-        print("1. Tambah data buku")
-        print("2. Hapus data buku")
-        print("3. Keluar dari pendataan")
 
-        pilih = input("Pilih menu: ")
+# ================= LIHAT DAFTAR BUKU =================
+def lihat_buku():
+    conn = connect_db()
+    cur = conn.cursor()
 
-        if pilih == "1":
-            tambah_buku()
-        elif pilih == "2":
-            hapus_buku()
-        elif pilih == "3":
-            print("Kembali ke menu utama...")
-            break
-        else:
-            print("Pilihan tidak valid")
+    print("\n=== DAFTAR BUKU PERPUSTAKAAN ===")
+    cur.execute("SELECT id, judul, pengarang, isbn, status FROM buku")
+    data = cur.fetchall()
+
+    if not data:
+        print("📭 Belum ada data buku.")
+    else:
+        print("\nID | Judul | Pengarang | ISBN | Status")
+        print("-" * 60)
+        for d in data:
+            print(f"{d[0]} | {d[1]} | {d[2]} | {d[3]} | {d[4]}")
+
+    conn.close()
