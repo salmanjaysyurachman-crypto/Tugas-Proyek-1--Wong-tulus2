@@ -32,9 +32,14 @@ def hapus_buku():
     for d in data:
         print(f"{d[0]}. {d[1]}")
 
-    pilih = int(input("Pilih ID buku yang ingin dihapus: "))
-    cur.execute("DELETE FROM buku WHERE id = ?", (pilih,))
+    try:
+        pilih = int(input("Pilih ID buku yang ingin dihapus: "))
+    except ValueError:
+        print("❌ Input salah! Harap masukkan angka ID saja.")
+        conn.close()
+        return
 
+    cur.execute("DELETE FROM buku WHERE id = ?", (pilih,))
     conn.commit()
     conn.close()
     print("🗑️ Data berhasil dihapus\n")
@@ -56,4 +61,4 @@ def menu_pendataan():
             print("Kembali ke menu utama...")
             break
         else:
-            print("❌ Pilihan tidak valid")
+            print("Pilihan tidak valid")
