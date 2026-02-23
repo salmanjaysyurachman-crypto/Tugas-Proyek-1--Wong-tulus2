@@ -14,14 +14,14 @@ def pinjam_buku():
         return
 
     for b in buku:
-        print("0. Keluar dari pendataan")
+        print("0. Kembali ke menu utama")
         print(f"{b[0]}. {b[1]} - {b[2]}")
 
     try:
     	pilih = int(input("Pilih ID buku: "))
 
     	if pilih == 0:
-            print("<- Proses peminjaman batal")
+            print("↩️ Kembali ke menu utama...")
             return
     except ValueError:
     	print("❌ Masukkan angka yang valid!")
