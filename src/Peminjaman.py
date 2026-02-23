@@ -5,6 +5,7 @@ def pinjam_buku():
     cur = conn.cursor()
 
     print("\n=== Peminjaman Buku ===")
+    print("0. Keluar")
 
     cur.execute("SELECT id, judul, status FROM buku")
     buku = cur.fetchall()
@@ -18,6 +19,10 @@ def pinjam_buku():
 
     try:
     	pilih = int(input("Pilih ID buku: "))
+
+    	if pilih == 0:
+            print("<- Proses peminjaman batal")
+            return
     except ValueError:
     	print("❌ Masukkan angka yang valid!")
     	return
