@@ -5,7 +5,6 @@ def pinjam_buku():
     cur = conn.cursor()
 
     print("\n=== Peminjaman Buku ===")
-    print("0. Keluar")
 
     cur.execute("SELECT id, judul, status FROM buku")
     buku = cur.fetchall()
@@ -15,6 +14,7 @@ def pinjam_buku():
         return
 
     for b in buku:
+        print("0. Keluar dari pendataan")
         print(f"{b[0]}. {b[1]} - {b[2]}")
 
     try:
