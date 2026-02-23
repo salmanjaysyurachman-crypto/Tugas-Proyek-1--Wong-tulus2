@@ -33,8 +33,9 @@ def hapus_buku():
         print(f"{d[0]}. {d[1]}")
 
     pilih = int(input("Pilih ID buku yang ingin dihapus: "))
-    cur.execute("DELETE FROM buku WHERE id = ?", (pilih,))
-
-    conn.commit()
-    conn.close()
-    print("🗑️ Data berhasil dihapus\n")
+    try:
+        pilih = int(input("Pilih ID buku yang ingin dihapus: "))
+    except ValueError:
+        print("❌ Input salah! Harap masukkan angka ID saja.")
+        conn.close()
+        return
