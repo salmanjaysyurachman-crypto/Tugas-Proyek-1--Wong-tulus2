@@ -14,26 +14,25 @@ def menu():
 
         # ================= MENU PENDATAAN =================
         if pilih == "1":
-            while True:
-                print("\n=== MENU PENDATAAN BUKU ===")
-                print("1. Tambah data buku")
-                print("2. Hapus data buku")
-                print("3. Lihat daftar buku")
-                print("4. Kembali ke menu utama")
+           print("\n=== MENU PENDATAAN BUKU ===")
+           print("1. Tambah data buku")
+           print("2. Hapus data buku")
+           print("3. Lihat daftar buku")
+           print("4. Kembali ke menu utama")
 
-                sub = input("Pilih menu pendataan: ")
+           sub = input("Pilih menu pendataan: ")
 
-                if sub == "1":
-                    tambah_buku()
-                elif sub == "2":
-                    hapus_buku()
-                elif sub == "3":
-                    lihat_buku()
-                elif sub == "4":
-                    print("↩️ Kembali ke menu utama...")
-                    break
-                else:
-                    print("❌ Pilihan tidak valid")
+           if sub == "1":
+             tambah_buku()
+           elif sub == "2":
+             hapus_buku()
+           elif sub == "3":
+             lihat_buku()
+           elif sub == "4":
+             print("↩️ Kembali ke menu utama...")
+             continue
+           else:
+              print("❌ Pilihan tidak valid")
 
         # ================= MENU PEMINJAMAN =================
         elif pilih == "2":
@@ -47,9 +46,11 @@ def menu():
                 pinjam_buku()
             elif sub_pinjam == "2":
                 kembalikan_buku() # Ini fungsi baru yang akan kita buat
+            elif sub_pinjam == "3":
+                print("↩ Kembali ke menu utama...")
+                continue
             else:
-                print("↩️ Kembali ke menu utama...")
-                break
+                print("❌ Pilihan tidak valid")
 
         # ================= KELUAR PROGRAM =================
         elif pilih == "3":
