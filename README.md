@@ -17,3 +17,19 @@ Sebelum masuk ke program, sebelumnya kami telah menjalaini training selama 3 min
 2. Git collaboration
 
 Materi ini membekali kami untuk membangun kode yang efektif, terstruktur, dan membangung kolaborasi tim yang efesien.  
+
+## ⚙️ Cara Menginstall dan Menjalankan
+### Kebutuhan
+- python 3.7 atau versi yang lebih baru
+- Komputer dengan OS Windows 10 keatas, Linux, atau Mac
+
+### Langkah-langkah Installasi
+1. Clone repo ini
+```bash
+git clone https://github.com/salmanjaysyurachman-crypto/Tugas-Proyek-1--Wong-tulus2.git
+cd Tugas-Proyek-1--Wong-tulus2/src
+```
+2. Jalankan dengan Python
+```bash
+python main.py
+```
