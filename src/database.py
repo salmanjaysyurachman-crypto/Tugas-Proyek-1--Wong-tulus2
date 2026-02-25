@@ -1,4 +1,3 @@
-# database.py
 import sqlite3
 
 def connect_db():
@@ -26,7 +25,8 @@ def create_table():
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         nama TEXT,
         judul_buku TEXT,
-        tanggal TEXT
+        tanggal_pinjam TEXT,
+        tanggal_pengembalian TEXT
     )
     """)
 
