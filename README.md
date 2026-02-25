@@ -1,13 +1,5 @@
 # Tugas-Proyek-1--Wing-tulus2
 
-<img src='https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white'/>
-<img src='https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white'/>
-<img src='https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white'/>
-<img src='https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white'/>
-<img src='https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white'/>
-<img src='https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue'/>
-<img src='https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=whit'/>
-
 ![Perpus](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa24zcGFpb3FoZ3ltMzkyd2F3b2pybXA0bjl4ejJsY2h2Y3BweGxhcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/IyNRUs08UQsQxDst6g/giphy.gif)
 
 ## 👨‍👨‍👦 Tentang Kami
@@ -77,3 +69,4 @@ Pilih menu:
 ```
 Jika user milih nomor 1, maka program akan membawa user ke alur peminjaman buku yang meminta masukan untuk ID buku yang ingin dipinjam, nama peminjam, tanggal pengembalian dengan format DD/MM/YYYY.Jika user milih nomor 2, maka program akan membawa user ke alur pengembalian buku yang meminta masukan untuk ID peminjam.Jika user milih nomor 3, maka program akan membawa user ke menu utama lagi.
  
+![Our Skills](https://go-skill-icons.vercel.app/api/icons?i=python,sqlite,github,gemini&theme=light)
