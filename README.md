@@ -33,3 +33,36 @@ cd Tugas-Proyek-1--Wong-tulus2/src
 ```bash
 python main.py
 ```
+
+## ✨ Fitur dan Cara Pemakain
+Ketika sudah menjalankan program, akan muncul promt seperti ini:
+```bash
+=== SISTEM PERPUSTAKAAN ===
+1. Pendataan Buku
+2. Peminjaman Buku
+3. Keluar
+Pilih menu: 
+```
+User hanya tinggal memilih salah satu fitur dari menu ini.
+### Pendataan Buku
+Jika user memilih nomor 1 pada menu utama, maka akan tampil promt seperti ini:
+```bash
+=== MENU PENDATAAN BUKU ===
+1. Tambah data buku
+2. Hapus data buku
+3. Lihat daftar buku
+4. Kembali ke menu utama
+```
+Jika user milih nomor 1, maka program akan membawa user ke alur pendataan buku yang meminta masukan untuk judul buku, pengarang, dan ISBN. Jika user memilih nomor 2 maka program akan membawa user ke alur penghapusan data buku yang meminta masukan untuk ID buku. Jika user milih nomor 3, maka program menampilkan buku yang telah dimasukan. Jika user milih nomor 4, maka program akan membawa user ke menu utama kembali.
+
+### Peminjaman buku
+Jika user memilih nomor 1 pada menu utama, maka akan tampil promt seperti ini:
+```bash
+=== Peminjaman Buku ===
+1. Peminjaman
+2. Pengembalian
+3. Kembali ke menu utama
+Pilih menu: 
+```
+Jika user milih nomor 1, maka program akan membawa user ke alur peminjaman buku yang meminta masukan untuk ID buku yang ingin dipinjam, nama peminjam, tanggal pengembalian dengan format DD/MM/YYYY.Jika user milih nomor 2, maka program akan membawa user ke alur pengembalian buku yang meminta masukan untuk ID peminjam.Jika user milih nomor 3, maka program akan membawa user ke menu utama lagi.
+ 
