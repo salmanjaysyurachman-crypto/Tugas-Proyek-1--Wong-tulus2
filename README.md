@@ -1,4 +1,7 @@
 # Tugas-Proyek-1--Wing-tulus2
+
+![Perpus](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa24zcGFpb3FoZ3ltMzkyd2F3b2pybXA0bjl4ejJsY2h2Y3BweGxhcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/IyNRUs08UQsQxDst6g/giphy.gif)
+
 ## 👨‍👨‍👦 Tentang Kami
 Grup ini beranggotakan 3 orang:
 - Salman
