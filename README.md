@@ -2,9 +2,9 @@
 
 ![banner](Otomatisasi-Perpustakaan/src/properti/Banner.png)
 <br>
-<div align='center'>
+<p align='center'>
 	<img src='(Otomatisasi-Perpustakaan/src/properti/Perpustakaan.gif'/>
-</div>
+</p>
 
 ## 👨‍👨‍👦 Tentang Kami
 Grup ini beranggotakan 3 orang:
