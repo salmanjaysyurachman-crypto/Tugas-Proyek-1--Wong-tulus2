@@ -2,20 +2,21 @@
 
 ![banner](Otomatisasi-Perpustakaan/src/properti/Banner.png)
 
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white)![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=flat&logo=arch-linux&logoColor=white)
+
 <p align='center'>
 	<img src='Otomatisasi-Perpustakaan/src/properti/Perpustakaan.gif'/>
 </p>
 
-![Our Skills](https://go-skill-icons.vercel.app/api/icons?i=python,sqlite,github,gemini&theme=light)
-
+## 👥 Our Contributors
 <a href="https://github.com/salmanjaysyurachman-crypto/Tugas-Proyek-1--Wong-tulus2/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=salmanjaysyurachman-crypto/Tugas-Proyek-1--Wong-tulus2" />
 </a>
 
 ## 👨‍👨‍👦 Tentang Kami
 Grup ini beranggotakan 3 orang:
-- Salman 
-- Faris 
+- Salman ![https://www.instagram.com/isalmanjay/](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)
+- Faris ![https://www.instagram.com/farsss_amer/](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)
 - Saya 😸
 
 Grup ini dibentuk hanya untuk 1 tujuan, menyelesaikan tugas magang dari Gamelab. Grup Wong Tulus ini berisikan anak SMK yang memiliki hati besar. Kelapangan dada, harmonisasi, dan kerja sama adalah inti dari kelompok ini
@@ -79,6 +80,7 @@ Pilih menu:
 ```
 Jika user milih nomor 1, maka program akan membawa user ke alur peminjaman buku yang meminta masukan untuk ID buku yang ingin dipinjam, nama peminjam, tanggal pengembalian dengan format DD/MM/YYYY.Jika user milih nomor 2, maka program akan membawa user ke alur pengembalian buku yang meminta masukan untuk ID peminjam.Jika user milih nomor 3, maka program akan membawa user ke menu utama lagi.
 
+![Our Skills](https://go-skill-icons.vercel.app/api/icons?i=python,sqlite,github,gemini&theme=light)
 
 
 
