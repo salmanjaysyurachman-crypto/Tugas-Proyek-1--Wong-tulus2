@@ -76,4 +76,4 @@ Jika user milih nomor 1, maka program akan membawa user ke alur peminjaman buku 
 
 ![Wong Tulus GitHub stats](https://github-readme-stats.vercel.app/api?username=dimasadityapratam&show_icons=true&theme=gruvbox)
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)
