@@ -6,8 +6,8 @@
 
 ## 👨‍👨‍👦 Tentang Kami
 Grup ini beranggotakan 3 orang:
-- Salman ![https://www.instagram.com/isalmanjay/](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)
-- Faris ![https://www.instagram.com/farsss_amer/](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)
+- Salman 
+- Faris 
 - Saya 😸
 
 Grup ini dibentuk hanya untuk 1 tujuan, menyelesaikan tugas magang dari Gamelab. Grup Wong Tulus ini berisikan anak SMK yang memiliki hati besar. Kelapangan dada, harmonisasi, dan kerja sama adalah inti dari kelompok ini
@@ -74,4 +74,4 @@ Jika user milih nomor 1, maka program akan membawa user ke alur peminjaman buku 
 ## Another Details 
 ![Our Skills](https://go-skill-icons.vercel.app/api/icons?i=python,sqlite,github,gemini&theme=light)
 
-[![Wong Tulus GitHub stats](https://github-readme-stats.vercel.app/api?username=Wong-Tulus&show_icons=true&theme=gruvbox)
+![Wong Tulus GitHub stats](https://github-readme-stats.vercel.app/api?username=Wong-Tulus&show_icons=true&theme=gruvbox)
