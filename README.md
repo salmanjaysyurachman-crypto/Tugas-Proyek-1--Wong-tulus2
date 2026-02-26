@@ -2,7 +2,9 @@
 
 ![banner](Otomatisasi-Perpustakaan/src/properti/Banner.png)
 
+![fork](https://img.shields.io/github/forks/salmanjaysyurachman-crypto/Tugas-Proyek-1--Wong-tulus2)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white)![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=flat&logo=arch-linux&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 <p align='center'>
 	<img src='Otomatisasi-Perpustakaan/src/properti/Perpustakaan.gif'/>
