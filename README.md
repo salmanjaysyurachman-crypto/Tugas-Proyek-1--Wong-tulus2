@@ -74,4 +74,4 @@ Jika user milih nomor 1, maka program akan membawa user ke alur peminjaman buku 
 ## Another Details 
 ![Our Skills](https://go-skill-icons.vercel.app/api/icons?i=python,sqlite,github,gemini&theme=light)
 
-![Wong Tulus GitHub stats](https://github-readme-stats.vercel.app/api?username=Wong-Tulus&show_icons=true&theme=gruvbox)
+![Wong Tulus GitHub stats](https://github-readme-stats.vercel.app/api?username=dimasadityapratam&show_icons=true&theme=gruvbox)
