@@ -1,9 +1,9 @@
 # Tugas-Proyek-1--Wing-tulus2
 
-![banner](Otomatisisasi-Perpustakaan/src/properti/Banner.png)
+![banner](Otomatisasi-Perpustakaan/src/properti/Banner.png)
 <br>
 <div align='center'>
-	<img src='(Otomatisisasi-Perpustakaan/src/properti/Perpustakaan.gif'/>
+	<img src='(Otomatisasi-Perpustakaan/src/properti/Perpustakaan.gif'/>
 </div>
 
 ## 👨‍👨‍👦 Tentang Kami
