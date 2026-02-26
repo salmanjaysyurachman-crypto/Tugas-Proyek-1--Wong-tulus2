@@ -2,7 +2,15 @@
 
 ![banner](Otomatisasi-Perpustakaan/src/properti/Banner.png)
 
-![Foto](Otomatisasi-Perpustakaan/src/properti/Perpustakaan.gif)
+<p align='center'>
+	<img src='Otomatisasi-Perpustakaan/src/properti/Perpustakaan.gif'/>
+</p>
+
+![Our Skills](https://go-skill-icons.vercel.app/api/icons?i=python,sqlite,github,gemini&theme=light)
+
+<a href="https://github.com/salmanjaysyurachman-crypto/Tugas-Proyek-1--Wong-tulus2/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=salmanjaysyurachman-crypto/Tugas-Proyek-1--Wong-tulus2" />
+</a>
 
 ## 👨‍👨‍👦 Tentang Kami
 Grup ini beranggotakan 3 orang:
@@ -71,13 +79,6 @@ Pilih menu:
 ```
 Jika user milih nomor 1, maka program akan membawa user ke alur peminjaman buku yang meminta masukan untuk ID buku yang ingin dipinjam, nama peminjam, tanggal pengembalian dengan format DD/MM/YYYY.Jika user milih nomor 2, maka program akan membawa user ke alur pengembalian buku yang meminta masukan untuk ID peminjam.Jika user milih nomor 3, maka program akan membawa user ke menu utama lagi.
 
-## Another Details 
-![Our Skills](https://go-skill-icons.vercel.app/api/icons?i=python,sqlite,github,gemini&theme=light)
 
-![Statistik GitHub Saya](https://github-readme-stats.vercel.app/api?username=salmanjaysyurachman-crypto&show_icons=true&theme=radial)
 
-## Kontributor
-<a href="https://github.com/salmanjaysyurachman-crypto/Tugas-Proyek-1--Wong-tulus2/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=salmanjaysyurachman-crypto/Tugas-Proyek-1--Wong-tulus2" />
-</a>
 
