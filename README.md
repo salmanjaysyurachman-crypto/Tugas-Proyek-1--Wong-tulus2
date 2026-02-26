@@ -74,6 +74,10 @@ Jika user milih nomor 1, maka program akan membawa user ke alur peminjaman buku 
 ## Another Details 
 ![Our Skills](https://go-skill-icons.vercel.app/api/icons?i=python,sqlite,github,gemini&theme=light)
 
-![Wong Tulus GitHub stats](https://github-readme-stats.vercel.app/api?username=dimasadityapratam&show_icons=true&theme=gruvbox)
+![Statistik GitHub Saya](https://github-readme-stats.vercel.app/api?username=salmanjaysyurachman-crypto&show_icons=true&theme=radial)
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=dimasadityapratam)
+## Kontributor
+<a href="https://github.com/salmanjaysyurachman-crypto/Tugas-Proyek-1--Wong-tulus2/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=salmanjaysyurachman-crypto/Tugas-Proyek-1--Wong-tulus2" />
+</a>
+
