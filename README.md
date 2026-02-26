@@ -1,10 +1,8 @@
 # Tugas-Proyek-1--Wing-tulus2
 
 ![banner](Otomatisasi-Perpustakaan/src/properti/Banner.png)
-<br>
-<p align='center'>
-	<img src='(Otomatisasi-Perpustakaan/src/properti/Perpustakaan.gif'/>
-</p>
+
+![Foto](Otomatisasi-Perpustakaan/src/properti/Perpustakaan.gif)
 
 ## 👨‍👨‍👦 Tentang Kami
 Grup ini beranggotakan 3 orang:
