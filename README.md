@@ -1,4 +1,4 @@
-# Tugas-Proyek-1--Wing-tulus2
+# Tugas-Proyek-1--Wong-tulus2
 
 ![banner](Otomatisasi-Perpustakaan/src/properti/Banner.png)
 
@@ -37,6 +37,26 @@ Sebelum masuk ke program, sebelumnya kami telah menjalaini training selama 3 min
 Materi ini membekali kami untuk membangun kode yang efektif, terstruktur, dan membangung kolaborasi tim yang efesien.  
 
 ## ⚙️ Cara Menginstall dan Menjalankan
+### Struktur direktori
+```bash
+Otomatisasi-Perpsutakaan
+||-docs
+| |-Alur-Kerja-Program.drawio.png
+| |-Laporan-Kebutuhan-Sistem.pdf
+| |-Laporan-Observasi-Fiks.pdf
+| |-Laporan-Wawancara-Fix.pdf
+||-src
+| |-Peminjaman.py
+| |-data.py
+| |-database.py
+| |-main.py
+||-properti
+| |-Banner.png
+| |-Buku2.png
+| |-Perpustakaan.gif
+README.md	
+```
+
 ### Kebutuhan
 - python 3.7 atau versi yang lebih baru
 - Komputer dengan OS Windows 10 keatas, Linux, atau Mac
@@ -45,7 +65,7 @@ Materi ini membekali kami untuk membangun kode yang efektif, terstruktur, dan me
 1. Clone repo ini
 ```bash
 git clone https://github.com/salmanjaysyurachman-crypto/Tugas-Proyek-1--Wong-tulus2.git
-cd Tugas-Proyek-1--Wong-tulus2/src
+cd Tugas-Proyek-1--Wong-tulus2/Otomatisasi-Perpustakaan/src/kode
 ```
 2. Jalankan dengan Python
 ```bash
